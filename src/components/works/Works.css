@@ -1,0 +1,116 @@
+.works{
+    background-color: crimson;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+   position: relative;
+
+   .arrow{
+    margin-top: 260px;
+      height: 50px;
+      position: absolute;
+      cursor: pointer ;
+
+      &.left{
+        left: 100px;
+        transform: rotateY('180');
+      }
+
+      &.right{
+        right: 100px;
+
+      }
+   }
+
+    .slider{
+        height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-out;
+        margin-top: 120px;
+
+        .container{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+           
+            .item{
+                width: 700px; 
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+               justify-content: center;
+
+               .left{
+                flex: 4;
+                height: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+              
+               }
+               .right{
+                flex: 8;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+               
+               }
+             }
+        }
+    }
+}
+.leftcontainer{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.leftcontainer .imgcontainer{
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(245,179,155);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+}
+.leftcontainer .imgcontainer img{
+    margin-top: 45px;
+    width: 25px;
+    height: 35px;
+}
+.leftcontainer h2{
+    overflow: hidden;
+    color: #000;
+    font-size: 20px;
+}
+.leftcontainer p{
+    overflow: hidden;
+    color: black;
+    font-size: 13px;
+}
+.leftcontainer span{
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.right img{
+    width: 400px;
+    transform: rotate(-10deg);
+}
